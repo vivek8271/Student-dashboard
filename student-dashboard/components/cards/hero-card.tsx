@@ -1,7 +1,14 @@
 import GlowCard from "./glow-card";
 import { Flame } from "lucide-react";
 
-export default function HeroCard() {
+type Props = {
+  profile: {
+    name: string;
+    streak: number;
+  };
+};
+
+export default function HeroCard({ profile }: Props) {
   return (
     <GlowCard
       className="
@@ -25,7 +32,7 @@ export default function HeroCard() {
               lg:text-6xl
             "
           >
-            Vivek 👋
+            {profile.name} 👋
           </h1>
         </div>
 
@@ -46,7 +53,7 @@ export default function HeroCard() {
           <Flame className="h-5 w-5 text-orange-400" />
 
           <span className="text-sm text-orange-200">
-            12 Day Learning Streak
+            {profile.streak} Day Learning Streak
           </span>
         </div>
       </div>

@@ -18,3 +18,16 @@ export async function getCourses() {
     );
     return data;
 }
+
+export async function getActivity() {
+  const { data, error } = await supabase
+    .from("profile")
+    .select("*")
+    .single();
+
+  if (error) {
+    throw new Error(error.message);
+  }
+
+  return data;
+}
