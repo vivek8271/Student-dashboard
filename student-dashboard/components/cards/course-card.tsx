@@ -9,7 +9,7 @@ import type { Course } from "../../types/course";
 
 type Props = {
   course: Course;
-  index: number;
+  index?: number;
 };
 
 export default function CourseCard({
