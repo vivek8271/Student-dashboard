@@ -23,14 +23,14 @@ export default function ActivityCard({
   const chartData = data && data.length > 0
     ? data
     : [
-        { day: "Mon", hours: 0 },
-        { day: "Tue", hours: 0 },
-        { day: "Wed", hours: 0 },
-        { day: "Thu", hours: 0 },
-        { day: "Fri", hours: 0 },
-        { day: "Sat", hours: 0 },
-        { day: "Sun", hours: 0 },
-      ];
+      { day: "Mon", hours: 0 },
+      { day: "Tue", hours: 0 },
+      { day: "Wed", hours: 0 },
+      { day: "Thu", hours: 0 },
+      { day: "Fri", hours: 0 },
+      { day: "Sat", hours: 0 },
+      { day: "Sun", hours: 0 },
+    ];
   return (
     <GlowCard className="row-span-2 h-full">
       <div className="flex h-full flex-col">
@@ -47,7 +47,7 @@ export default function ActivityCard({
             width="100%"
             height={240}
           >
-            <AreaChart data={chartData}>
+            <AreaChart data={chartData} >
               <defs>
                 <linearGradient
                   id="colorHours"
@@ -72,6 +72,10 @@ export default function ActivityCard({
 
               <XAxis
                 dataKey="day"
+                padding={{
+                  left: 10,
+                  right: 10,
+                }}
                 tick={{
                   fill: "#71717a",
                   fontSize: 12,

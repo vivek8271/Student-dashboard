@@ -63,7 +63,7 @@ export default function Sidebar() {
         />
 
         <h1 className="hidden text-xl font-bold lg:block">
-          LearnX
+          Next-Gen
         </h1>
       </div>
 
