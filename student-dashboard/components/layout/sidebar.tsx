@@ -30,9 +30,15 @@ export default function Sidebar() {
   return (
     <aside
       className="
+        fixed
+        left-0
+        top-0
+        z-20
+
         hidden
         md:flex
         h-screen
+
         w-20
         lg:w-64
         flex-col
