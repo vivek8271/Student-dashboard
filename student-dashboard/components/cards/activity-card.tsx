@@ -84,14 +84,49 @@ export default function ActivityCard({
                 tickLine={false}
               />
 
-              <Tooltip />
+  
+              <Tooltip
+                cursor={{
+                  stroke: "rgba(255,255,255,0.1)",
+                  strokeWidth: 1,
+                }}
+                contentStyle={{
+                  background: "rgba(10,10,10,0.85)",
+                  border: "1px solid rgba(255,255,255,0.08)",
+                  borderRadius: "20px",
+                  backdropFilter: "blur(16px)",
+                  boxShadow:
+                    "0 10px 40px rgba(0,0,0,0.4)",
+                  color: "#fff",
+                  padding: "12px 14px",
+                }}
+                labelStyle={{
+                  color: "#a1a1aa",
+                  fontSize: "12px",
+                  marginBottom: "6px",
+                }}
+                itemStyle={{
+                  color: "#fff",
+                  fontWeight: 600,
+                  fontSize: "14px",
+                }}
+              />
+
 
               <Area
                 type="monotone"
                 dataKey="hours"
                 stroke="#06b6d4"
+                strokeWidth={3}
                 fillOpacity={1}
                 fill="url(#colorHours)"
+                dot={false}
+                activeDot={{
+                  r: 6,
+                  fill: "#06b6d4",
+                  stroke: "#0a0a0a",
+                  strokeWidth: 2,
+                }}
               />
             </AreaChart>
           </ResponsiveContainer>
