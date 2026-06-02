@@ -9,34 +9,74 @@ export default function Loading() {
     <DashboardLayout>
       <Sidebar />
 
-      <main className="flex-1 p-6">
+      <main className="flex-1 p-6 pb-24 md:ml-20 lg:ml-64">
         <BentoGrid>
 
           {/* Hero Skeleton */}
           <div
             className="
-              md:col-span-2
-              xl:col-span-3
-              row-span-2
-              animate-pulse
-              rounded-3xl
-              border
-              border-white/10
-              bg-white/[0.03]
-            "
-          />
+                      relative
+                      overflow-hidden
+                      md:col-span-2
+                      xl:col-span-3
+                      row-span-2
+                      rounded-3xl
+                      border
+                      border-white/10
+                      bg-white/[0.03]
+                    "
+          >
+
+            <div
+              className="
+                        absolute
+                        inset-0
+                        -translate-x-full
+                        bg-gradient-to-r
+                        from-transparent
+                        via-white/10
+                        to-transparent
+                      "
+              style={{
+                animation:
+                  "shimmer 2s linear infinite",
+              }}
+            />
+
+          </div>
+
 
           {/* Activity Skeleton */}
+
           <div
             className="
-              row-span-2
-              animate-pulse
-              rounded-3xl
-              border
-              border-white/10
-              bg-white/[0.03]
-            "
-          />
+                      relative
+                      overflow-hidden
+                      row-span-2
+                      rounded-3xl
+                      border
+                      border-white/10
+                      bg-white/[0.03]
+                    "
+          >
+
+            <div
+              className="
+                        absolute
+                        inset-0
+                        -translate-x-full
+                        bg-gradient-to-r
+                        from-transparent
+                        via-white/10
+                        to-transparent
+                    "
+              style={{
+                animation:
+                  "shimmer 2s linear infinite",
+              }}
+            />
+          </div>
+
 
           {/* Course Skeletons */}
           <SkeletonCard />

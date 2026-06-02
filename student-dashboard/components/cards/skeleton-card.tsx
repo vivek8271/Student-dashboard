@@ -11,15 +11,16 @@ export default function SkeletonCard() {
         p-6
       "
     >
-      {/* Pulse Animation */}
+      {/* Shimmer Effect */}
       <div
         className="
           absolute
           inset-0
-          animate-pulse
+          -translate-x-full
+          animate-[shimmer_2s_infinite]
           bg-gradient-to-r
           from-transparent
-          via-white/5
+          via-white/10
           to-transparent
         "
       />
@@ -65,7 +66,10 @@ export default function SkeletonCard() {
             bg-white/10
           "
         />
+      
       </div>
+
+      
     </article>
   );
 }
