@@ -30,6 +30,7 @@ Designed with a premium Bento Grid UI, smooth GPU-accelerated animations, dynami
 -> Animated progress bars
 -> Interactive mobile bottom navbar
 -> Cursor-follow glow effects
+-> Shimmer loading
 
 ---
 
