@@ -28,13 +28,7 @@ export default async function HomePage() {
     <DashboardLayout>
       <Sidebar />
 
-      <main className="
-        flex-1
-        p-6
-        pb-24
-        md:ml-20
-        lg:ml-64
-      ">
+      <main className="flex-1 p-6 pb-24 md:ml-20 lg:ml-64">
         <BentoGrid>
 
           <HeroCard profile={profile} />

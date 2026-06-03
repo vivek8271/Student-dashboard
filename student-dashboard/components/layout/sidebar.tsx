@@ -29,37 +29,14 @@ export default function Sidebar() {
 
   return (
     <aside
-      className="
-        fixed
-        left-0
-        top-0
-        z-20
-
-        hidden
-        md:flex
-        h-screen
-
-        w-20
-        lg:w-64
-        flex-col
-        border-r
-        border-white/10
-        bg-[#0a0a0a]
-        px-3
-        py-6
+      className="fixed left-0 top-0 z-20 hidden md:flex h-screen w-20 lg:w-64 flex-col border-r border-white/10 bg-[#0a0a0a] px-3 py-6
       "
     >
       
       {/* Logo */}
       <div className="mb-10 flex items-center gap-3 px-3">
         <div
-          className="
-            h-10
-            w-10
-            rounded-2xl
-            bg-gradient-to-br
-            from-violet-500
-            to-cyan-500
+          className="h-10 w-10 rounded-2xl bg-gradient-to-br from-violet-500 to-cyan-500
           "
         />
 
@@ -79,21 +56,7 @@ export default function Sidebar() {
             <button
               key={item.name}
               onClick={() => setActive(item.name)}
-              className="
-                relative
-                flex
-                items-center
-                gap-3
-                overflow-hidden
-                rounded-2xl
-                px-3
-                py-3
-                text-sm
-                font-medium
-                text-zinc-400
-                transition-colors
-                hover:text-white
-              "
+              className="relative flex items-center gap-3 overflow-hidden rounded-2xl px-3 py-3 text-sm font-medium text-zinc-400 transition-colors hover:text-white"
             >
               {/* Active Background */}
               {isActive && (
@@ -104,12 +67,7 @@ export default function Sidebar() {
                     stiffness: 300,
                     damping: 25,
                   }}
-                  className="
-                    absolute
-                    inset-0
-                    rounded-2xl
-                    bg-white/10
-                  "
+                  className="absolute inset-0 rounded-2xl bg-white/10"
                 />
               )}
 
@@ -140,26 +98,11 @@ export default function Sidebar() {
           stiffness: 300,
           damping: 20,
         }}
-        className="
-          mt-auto
-          rounded-3xl
-          border
-          border-white/10
-          bg-white/5
-          p-4
-          backdrop-blur
-        "
+        className="mt-auto rounded-3xl border border-white/10 bg-white/5 p-4 backdrop-blur"
       >
         <div className="flex items-center gap-3">
           <div
-            className="
-              h-12
-              w-12
-              rounded-full
-              bg-gradient-to-br
-              from-cyan-500
-              to-violet-500
-            "
+            className="h-12 w-12 rounded-full bg-gradient-to-br from-cyan-500 to-violet-500"
           />
 
           <div className="hidden lg:block">

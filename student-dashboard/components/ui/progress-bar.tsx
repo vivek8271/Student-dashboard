@@ -11,13 +11,7 @@ export default function ProgressBar({
 }: Props) {
   return (
     <div
-      className="
-        h-2
-        overflow-hidden
-        rounded-full
-        bg-white/10
-      "
-    >
+      className="h-2 overflow-hidden rounded-full bg-white/10">
       <motion.div
         initial={{
           width: 0,
@@ -29,14 +23,7 @@ export default function ProgressBar({
           duration: 1,
           ease: "easeOut",
         }}
-        className="
-          h-full
-          rounded-full
-          bg-gradient-to-r
-          from-cyan-500
-          to-violet-500
-        "
-      />
+        className="h-full rounded-full bg-gradient-to-r from-cyan-500 to-violet-500"/>
     </div>
   );
 }

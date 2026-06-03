@@ -28,25 +28,7 @@ export default function MobileNav() {
 
   return (
     <nav
-      className="
-        fixed
-        bottom-4
-        left-1/2
-        z-50
-        flex
-        -translate-x-1/2
-        items-center
-        gap-2
-        rounded-3xl
-        border
-        border-white/10
-        bg-black/40
-        p-2
-        backdrop-blur-2xl
-
-        md:hidden
-      "
-    >
+      className="fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 items-center gap-2 rounded-3xl border border-white/10 bg-black/40 p-2 backdrop-blur-2xl md:hidden">
       {navItems.map((item) => {
         const Icon = item.icon;
 
@@ -59,18 +41,7 @@ export default function MobileNav() {
             onClick={() =>
               setActive(item.name)
             }
-            className="
-              relative
-              flex
-              h-14
-              w-14
-              items-center
-              justify-center
-              overflow-hidden
-              rounded-2xl
-              text-zinc-400
-            "
-          >
+            className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl text-zinc-400">
             {/* Active Background */}
             {isActive && (
               <motion.div
@@ -80,13 +51,7 @@ export default function MobileNav() {
                   stiffness: 300,
                   damping: 25,
                 }}
-                className="
-                  absolute
-                  inset-0
-                  rounded-2xl
-                  bg-white/10
-                "
-              />
+                className="absolute inset-0 rounded-2xl bg-white/10"/>
             )}
 
             {/* Icon */}

@@ -45,31 +45,13 @@ export default function GlowCard({
         damping: 20,
       }}
       className={clsx(
-        `
-        group
-        relative
-        overflow-hidden
-        rounded-3xl
-        border
-        border-white/10
-        bg-white/[0.03]
-        p-6
-        backdrop-blur-xl
-      `,
+        `group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-xl`,
         className
       )}
     >
       {/* Mouse Glow */}
       <div
-        className="
-          pointer-events-none
-          absolute
-          inset-0
-          opacity-0
-          transition-opacity
-          duration-300
-          group-hover:opacity-100
-        "
+        className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         style={{
           background: `
             radial-gradient(
@@ -83,15 +65,7 @@ export default function GlowCard({
 
       {/* Border Glow */}
       <div
-        className="
-          pointer-events-none
-          absolute
-          inset-0
-          rounded-3xl
-          border
-          border-white/5
-        "
-      />
+        className="pointer-events-none absolute inset-0 rounded-3xl border border-white/5"/>
 
       {/* Content */}
       <div className="relative z-10">

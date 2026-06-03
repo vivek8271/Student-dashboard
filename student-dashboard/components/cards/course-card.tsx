@@ -23,16 +23,7 @@ export default function CourseCard({
         {/* Top */}
         <div className="flex items-start justify-between">
           <div
-            className="
-            flex
-            h-12
-            w-12
-            items-center
-            justify-center
-            rounded-2xl
-            bg-white/5
-          "
-          >
+            className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5">
             <Icon className="h-6 w-6 text-cyan-400" />
           </div>
 
@@ -44,12 +35,7 @@ export default function CourseCard({
         {/* Title */}
         <div className="mt-6">
           <h3
-            className="
-            text-lg
-            font-semibold
-            leading-snug
-          "
-          >
+            className="text-lg font-semibold leading-snug">
             {course.title}
           </h3>
         </div>
