@@ -278,6 +278,11 @@ Recommended deployment platform:
 
 Deploy instantly by connecting your GitHub repository.
 
+Deployed URL:
+->> ```txt
+        https://next-zen-student-dashboard.vercel.app
+      ```
+
 ---
 
 # 📸 Screenshots
