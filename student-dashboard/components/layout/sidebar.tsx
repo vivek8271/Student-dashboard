@@ -49,6 +49,7 @@ export default function Sidebar() {
         py-6
       "
     >
+      
       {/* Logo */}
       <div className="mb-10 flex items-center gap-3 px-3">
         <div

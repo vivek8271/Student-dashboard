@@ -26,6 +26,7 @@ export default function SkeletonCard() {
       />
 
       <div className="relative z-10">
+        
         {/* Icon */}
         <div
           className="
@@ -66,10 +67,10 @@ export default function SkeletonCard() {
             bg-white/10
           "
         />
-      
+
       </div>
 
-      
+
     </article>
   );
 }

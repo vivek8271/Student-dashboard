@@ -79,6 +79,7 @@ export default function Loading() {
 
 
           {/* Course Skeletons */}
+
           <SkeletonCard />
           <SkeletonCard />
           <SkeletonCard />

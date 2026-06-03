@@ -1,14 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-import {
-  Home,
-  BookOpen,
-  BarChart3,
-  Settings,
-} from "lucide-react";
-
+import { Home, BookOpen, BarChart3, Settings } from "lucide-react";
 import { motion } from "framer-motion";
 
 const navItems = [
@@ -100,10 +93,9 @@ export default function MobileNav() {
             <Icon
               className={`
                 relative z-10 h-5 w-5 transition-colors
-                ${
-                  isActive
-                    ? "text-white"
-                    : "text-zinc-500"
+                ${isActive
+                  ? "text-white"
+                  : "text-zinc-500"
                 }
               `}
             />

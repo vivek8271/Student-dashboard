@@ -2,9 +2,7 @@
 
 import GlowCard from "./glow-card";
 import ProgressBar from "../ui/progress-bar";
-
 import { iconMap } from "../../lib/icon-map";
-
 import type { Course } from "../../types/course";
 
 type Props = {
@@ -21,6 +19,7 @@ export default function CourseCard({
   return (
     <GlowCard>
       <div className="flex h-full flex-col">
+        
         {/* Top */}
         <div className="flex items-start justify-between">
           <div

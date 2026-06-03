@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import clsx from "clsx";
-
 import { fadeUp } from "../animations/fade-up";
 
 type Props = {
